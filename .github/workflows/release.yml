@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: export json and png
+        uses: oliverlorenz/tiled-exporter-action@v1
+        with:
+          export_json: true
+          export_png: true
+          pattern: "*.tmx"
+      
+      - name: test
+        run: ls -la
