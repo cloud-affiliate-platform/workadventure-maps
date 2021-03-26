@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: export json and png
-        uses: oliverlorenz/tiled-exporter-action@v1
+        uses: oliverlorenz/tiled-exporter-action@master
         with:
           export_json: true
           export_png: true
