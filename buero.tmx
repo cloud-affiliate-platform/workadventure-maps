@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="29" height="31" tilewidth="32" tileheight="32" infinite="0" nextlayerid="125" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="29" height="31" tilewidth="32" tileheight="32" infinite="0" nextlayerid="125" nextobjectid="1">
  <editorsettings>
-  <export target="../../../documents/code/github.com/oliverlorenz/workadventure-map/buero.json" format="json"/>
+  <export target="buero.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" name="Office_walls_floors_32x32" tilewidth="32" tileheight="32" tilecount="192" columns="16">
   <image source="workadventure-tiles/Modern_Office/Upscaled_versions/Office_walls_floors_32x32.png" width="512" height="384"/>
@@ -31,7 +31,7 @@
   <image source="workadventure-tiles/Modern_Interiors/1_Interiors/32x32/Interiors_32x32.png" width="512" height="16704"/>
  </tileset>
  <tileset firstgid="14759" name="functional" tilewidth="32" tileheight="32" tilecount="1" columns="1">
-  <image source="../../oliverlorenz/workadventure-tiles/custom/functional.png" width="32" height="32"/>
+  <image source="workadventure-tiles/custom/functional.png" width="32" height="32"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
