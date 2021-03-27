@@ -1,0 +1,3 @@
+[submodule "workadventure-tiles"]
+	path = workadventure-tiles
+	url = git@github.com:oliverlorenz/workadventure-tiles.git
