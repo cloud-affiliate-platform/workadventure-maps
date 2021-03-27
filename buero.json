@@ -950,9 +950,9 @@
          "height":31,
          "id":113,
          "name":"Collide-Layer",
-         "opacity":0.64,
+         "opacity":0,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":29,
          "x":0,
          "y":0
@@ -962,9 +962,9 @@
          "height":31,
          "id":125,
          "name":"start",
-         "opacity":0.74,
+         "opacity":0,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":29,
          "x":0,
          "y":0
