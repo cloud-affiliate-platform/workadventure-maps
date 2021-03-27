@@ -8,27 +8,32 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: export json and png
-        uses: oliverlorenz/tiled-exporter-action@master
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v1
         with:
-          export_json: true
-          export_png: true
-          tmx_file: "buero.tmx"
+          token: ${{ secrets.GH_PAT }}
+          repository: oliverlorenz/com_oliverlorenz_www
+          event-type: cap-maps-was-changed
+
+      # - name: export json and png
+      #   uses: oliverlorenz/tiled-exporter-action@master
+      #   with:
+      #     export_json: true
+      #     export_png: true
+      #     tmx_file: "buero.tmx"
       
-      - name: show files
-        run: ls -la
+      # - name: show files
+      #   run: ls -la
       
-      - name: show files
-        run: ls -la workadventure-tiles
+      # - name: show files
+      #   run: ls -la workadventure-tiles
       
-      - name: show files
-        run: git add .
+      # - name: show files
+      #   run: git add .
       
-      - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          keep_files: true
+      # - name: Deploy 🚀
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: .
+      #     keep_files: true
