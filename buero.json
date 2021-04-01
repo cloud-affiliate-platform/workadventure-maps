@@ -1052,7 +1052,7 @@
          "height":31,
          "id":135,
          "name":"area-gaming",
-         "opacity":0.7,
+         "opacity":0,
          "properties":[
                 {
                  "name":"openWebsite",
