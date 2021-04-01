@@ -989,19 +989,24 @@
          "opacity":0,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"jitsiRoom",
                  "type":"string",
-                 "value":"https:\/\/oliverlorenz.com\/cap-maps\/1.html"
+                 "value":"cap-devroom-board"
                 }, 
                 {
-                 "name":"openWebsiteTrigger",
+                 "name":"jitsiTrigger",
                  "type":"string",
                  "value":"onaction"
                 }, 
                 {
-                 "name":"openWebsiteTriggerMessage",
+                 "name":"jitsiTriggerMessage",
                  "type":"string",
                  "value":"Board \u00f6ffnen mit LEERTASTE"
+                }, 
+                {
+                 "name":"jitsiUrl",
+                 "type":"string",
+                 "value":"meet.jit.si"
                 }],
          "type":"tilelayer",
          "visible":true,
